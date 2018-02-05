@@ -1,0 +1,14 @@
+{
+        "ENDPOINT" :
+                {
+                        "myIP" : "192.168.1.86",
+                        "myUsername" : "integrator",
+                        "myPassword" : "integrator"
+                },
+
+        "IO" :
+                {
+                        "busyLight" : "6",
+                        "unUsed" : "7"
+                }
+}

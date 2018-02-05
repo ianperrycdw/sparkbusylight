@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Status product="Cisco Codec" version="ce9.3.0.344d3cf" apiVersion="4">
+    <Call item="5" maxOccurrence="n">
+        <FacilityServiceId>0</FacilityServiceId>
+        <ReceiveCallRate>3072</ReceiveCallRate>
+        <TransmitCallRate>3072</TransmitCallRate>
+    </Call>
+</Status>
