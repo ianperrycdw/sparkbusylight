@@ -32,10 +32,10 @@ def onAcall(IP):
     xmlResponse = ET.fromstring(response.text)
     print (xmlResponse)
     for data in xmlResponse:
-        if "Empty Result" in data:
-            return False
-        elif "Call" in data:
+        if data.tag == 'Call':
             return True
+        else:
+            return False
 
 if onAcall(myIP):
     print(str(datetime.datetime.now()) + " Endpoint with IP address " + myIP + " is on a call")
