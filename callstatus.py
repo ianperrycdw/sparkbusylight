@@ -29,6 +29,7 @@ def onAcall(IP):
     print(str(datetime.datetime.now()) + " Response received")
     print(str(datetime.datetime.now()) + " About to parse XML")
     xmlResponse = ET.fromstring(response.text)
+    print (xmlResponse)
     for data in xmlResponse:
         if "Empty Result" in data:
             return False
