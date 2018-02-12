@@ -1,10 +1,7 @@
 {
         "ENDPOINT" :
                 {
-                        "help" : "      You'll need to enter a reachable device IP address, 
-                                        and a username and password with the integrator role.
-                                        you can create these from Advanced Settings in Spark Control Hub",
-                        "myIP" : "**ENTER YOUR ENDPOINT IP ADDRESS HERE**",
+                        "myIP" : "192.168.1.86",
                         "myUsername" : "integrator",
                         "myPassword" : "integrator"
                 },
