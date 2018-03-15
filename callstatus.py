@@ -21,15 +21,12 @@ def onAcall(IP):
     xmlResponse = ET.fromstring(response.text)
     for data in xmlResponse:
         if data.tag == 'Call':
-            TransmitCallRate = data[2].text
-            return True, TransmitCallRate
-        else:
+            return True
+        else:   
             return False
 
-busy, bandwidth = onAcall(myIP)
-
-if busy:
-    print(" Endpoint with IP address " + myIP + " is on a " + bandwidth + "Kbps call")
+if onAcall(myIP):
+    print(" Endpoint with IP address " + myIP + " is on a call")
 else:
     print(" Endpoint with IP address " + myIP + " is available, and not on a call")
 
